@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 1 - Pemrograman Berbasis Web</title>
+     <style>
+       body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f7fa;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    h1 {
+      background: #2d20df;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+    }
+    section {
+      background: white;
+      padding: 25px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    code {
+      background: #eee;
+      padding: 3px 5px;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+    .contoh {
+      background: #f0f8ff;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      font-style: italic;
+    } 
+    table {
+      border-collapse: collapse; /* biar garis rapi */
+      width: 60%;
+      margin: 20px auto;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #2d20df;
+      color: white;
+    }
+    img{
+    margin: 20px auto;
+      border-radius: px;
+      overflow: hidden;
+      display: flex; justify-content: center;
+    }
+    </style>
+</head>
+<body>
+    <header>
+    <h1 id="tagdasar">Dasar Tag HTML</h1>
+    </header>
+   <section>
+    <h2>Tag Dasar</h2>
+        <p>Tag di HTML adalah <i>penanda</i> yang digunakan untuk memberi tahu browser bagaimana konten harus ditampilkan di halaman web.Tag menjadi sebuah penanda awalan dan akhiran dari sebuah elemen di HTML.Tag dibuat dengan kurung sudut (<...>),lalu di dalamnya berisi nama tag.
+        </p>
+        <table>
+            <tr>
+                <th>Tag</th>
+                <th>Fungsi</th>
+            </tr>
+            <tr>
+                <td>html</td>
+                <td>untuk memulai dokumen HTML</td>
+            </tr>
+            <tr>
+                <td>head</td>
+                <td>bagian kepala dokumen(tidak tampil langsung,tapi berisi informasi tentang web)</td>
+            </tr>
+            <tr>
+                <td>body</td>
+                <td>bagian isi utama halaman web</td>
+            </tr>
+            <tr>
+                <td>h1 sampai h6</td>
+                <td>tag untuk membuat heading pada artikel</td>
+            </tr>
+            <tr>
+                <td>p</td>
+                <td>tag untuk membuat paragraf</td>
+            </tr>
+            <tr>
+                <td>!-- --</td>
+                <td>tag untuk membuat komentar</td>
+            </tr>
+        </table>
+   </section>
+   <section>
+   <h2>Tag Paragraf</h2>
+   <p>Pada web,paragraf biasanya digunakan untuk menampilkan teks atau artikel</p>
+        <table>
+            <tr>
+                <th>Tag</th>
+                <th>Fungsi</th>
+            </tr>
+            <tr>
+                <td>p -> Paragraf</td>
+                <td>tag untuk membuat paragraf</td>
+            </tr>
+            <tr>
+                <td>br -> Line Break</td>
+                <td>tag untuk memindah baris tanpa membuat paragraf baru</td>
+            </tr>
+            <tr>
+                <td>hr -> Horizontak Rule</td>
+                <td>tag untuk membuat garis pemisah horizontal</td>
+            </tr>
+            <tr>
+                <td>pre -> Preformatted Text</td>
+                <td>tag untuk menampilkan teks dengan format asli(spasi & baris tidak hilang)</td>
+            </tr>
+        </table>
+   </section>
+   <section>
+    <h2>Tag Gaya Teks</h2>
+    <p>Tag yang dipakai untuk mengubah tampilan atau penekanan teks didalam halaman web</p>
+    <table>
+            <tr>
+                <th>Tag</th>
+                <th>Fungsi</th>
+            </tr>
+            <tr>
+                <td>b</td>
+                <td><b>Tulisan tebal</b></td>
+            </tr>
+            <tr>
+                <td>strong</td>
+                <td><strong>Seperti b,tapi dengan makna penekanan</strong></td>
+            </tr>
+            <tr>
+                <td>i</td>
+                <td><i>Tulisan miring</i></td>
+            </tr>
+            <tr>
+                <td>em</td>
+                <td><em>Mirip i,tapi dengan arti penekanan</em></td>
+            </tr>
+            <tr>
+                <td>u</td>
+                <td><u>Tulisan bergaris bawah</u></td>
+            </tr>
+            <tr>
+                <td>mark</td>
+                <td><mark>Tulisan dengan sorotan kuning pada teks</mark></td>
+            </tr>
+            <tr>
+                <td>small</td>
+                <td><small>Tulisan teks lebih kecil dari ukuran normal</small></td>
+            </tr>
+            <tr>
+                <td>del</td>
+                <td>Menunjukkan teks yang sudah dihapus</td>
+            </tr>
+            <tr>
+                <td>ins</td>
+                <td><ins>Menunjukkan teks yang ditambahkan(garis bawah)</ins></td>
+            </tr>
+            <tr>
+                <td>sup</td>
+                <td><sup>Pangkat atas</sup></td>
+            </tr>
+            <tr>
+                <td>sub</td>
+                <td><sub>Pangkat bawah</sub></td>
+            </tr>
+    </table>
+   </section>
+   <section>
+    <h2>Tag Struktur Lanjutan</h2>
+    <p>Tag struktur lanjutan yang berfungsi untuk membangun kerangka halaman web agar lebih teratur, mudah dipahami, serta ramah mesin pencari (SEO).</p>
+    <table>
+        <tr>
+            <th>Tag</th>
+            <th>Fungsi</th>
+        </tr>
+        <tr>
+            <td>header</td>
+            <td>Untuk mendefinisikan bagian kepala dari suatu halaman atau bagian tertentu. Biasanya berisi judul, logo, dan elemen navigasi.</td>
+        </tr>
+        <tr>
+            <td>nav</td>
+            <td>Untuk menampung kumpulan tautan navigasi. Bagian ini memudahkan pengguna berpindah ke halaman atau bagian lain dalam website.</td>
+        </tr>
+        <tr>
+            <td>main</td>
+            <td>Digunakan untuk menandai isi utama dari suatu halaman web.</td>
+        </tr>
+        <tr>
+            <td>section</td>
+            <td>Dipakai untuk membagi konten ke dalam bagian-bagian tematis. Setiap bagian biasanya diawali dengan judul (heading).</td>
+        </tr>
+        <tr>
+            <td>article</td>
+            <td>Digunakan untuk konten yang dapat berdiri sendiri, seperti artikel berita, posting blog, atau ulasan.</td>
+        </tr>
+        <tr>
+            <td>aside</td>
+            <td>Digunakan untuk menampilkan informasi tambahan yang mendukung isi utama, misalnya iklan, catatan, atau tautan terkait.</td>
+        </tr>
+        <tr>
+            <td>footer</td>
+            <td>Berfungsi untuk mendefinisikan bagian kaki halaman atau bagian tertentu. Biasanya berisi informasi hak cipta, kontak, atau tautan tambahan.</td>
+        </tr>
+    </table>
+   </section>
+
+    <h1>Hyperlink pada HTML</h1>
+    <section>
+        <p>Salah satu elemen penting dalam HTML adalah hyperlink atau tautan. Hyperlink memungkinkan pengguna untuk berpindah dari satu halaman ke halaman lain, baik di dalam website yang sama maupun ke website lain. Untuk membuat hyperlink digunakan tag <a> (anchor).</p>
+            <h2>Contoh Penggunaan</h2>
+            <h4>1.Menuju Website Lain</h4>
+            <p><img src="assets/wblain.png" alt="img" width="500px" height="100px"></p>
+            <a href="https://www.google.com">Kunjungi Google</a>
+            <ul>
+                <li>href="https://www.google.com" berisi alamat tujuan.</li>
+                <li>Teks “Kunjungi Google” akan tampil di halaman web.</li>
+                <li>Jika diklik, pengguna akan diarahkan ke situs Google.</li>
+            </ul>
+            <h4>2. Menuju Halaman di Dalam Website</h4>
+            <p><img src="assets/wbdalam.png" alt="img" width="500px" height="100px"></p>
+            <a href="hyperlink.html">Tentang Kami</a>
+            <ul>
+                <li>Link ini mengarah ke file about.html yang ada di dalam satu folder dengan file utama.</li>
+                <li>Cocok dipakai untuk navigasi antar halaman dalam satu website.</li>
+            </ul>
+            <h4>3. Menuju Bagian Tertentu dalam Halaman (Anchor Link)</h4>
+            <p><img src="assets/wbtertentu.png" alt="img" width="500px" height="100px"></p>
+            <a href="#tagdasar">Lihat Bagian Tag Dasar</a>
+            <ul>
+                <li>href="#tagdasar" mengacu pada elemen yang memiliki id="tagdasar".</li>
+                <li>Jika diklik, halaman akan langsung bergulir ke bagian "tagdasar".</li>
+            </ul>
+            <h4>4. Membuka Link di Tab Baru</h4>
+            <p><img src="assets/wbbaru.png" alt="img" width="500px" height="100px"></p>
+            <a href="https://www.petanikode.com" target="_blank">Kunjungi PetaniKode</a>
+            <ul>
+                <li>Atribut target="_blank" membuat tautan terbuka di tab baru.</li>
+                <li>Hal ini berguna jika ingin pengguna tetap berada di halaman utama.</li>
+            </ul>
+    </section>
+
+    <h1>Menampilkan Gambar pada HTML</h1>
+    <section>
+        <h2>Sintaks Dasar</h2>
+        <p><img src="assets/imgsintaks.png" alt="img" width="500px" height="100px"></p>
+        <h3>Keterangan Atribut</h3>
+        <table>
+            <tr>
+                <th>Tag</th>
+                <th>Fungsi</th>
+            </tr>
+            <tr>
+                <td>src</td>
+                <td>Menentukan lokasi atau alamat file gambar.</td>
+            </tr>
+            <tr>
+                <td>alt</td>
+                <td>Menyediakan teks alternatif apabila gambar tidak dapat ditampilkan.</td>
+            </tr>
+            <tr>
+                <td>width & height</td>
+                <td>Menentukan ukuran gambar dalam satuan piksel.</td>
+            </tr>
+            <tr>
+                <td>tittle(opsional)</td>
+                <td>Menampilkan teks tambahan ketika kursor diarahkan ke gambar.</td>
+            </tr>
+        </table>
+        <h3>Macam Macam Cara Menampilkan Gambar</h3>
+        <h4>1. Dari Folder Proyek (Local File / Relative Path)</h4>
+        Gambar disimpan di dalam folder yang sama dengan file HTML.
+        <p><img src="assets/imgsama.png" alt="" width="500px" height="100px"></p>
+        Kalau gambar ada di folder khusus, misalnya images/, maka:
+        <p><img src="assets/imgfolder.png" alt="" width="500px" height="100px"></p>
+        <h4>2. Dari Lokasi Lengkap di Komputer (Absolute Path, jarang dipakai)</h4>
+        Menuliskan alamat lengkap file di komputer.
+        <p><img src="assets/imgkom.png" alt="" width="500px" height="100px"></p>
+        Cara ini biasanya hanya berfungsi di komputer sendiri, tidak untuk dibagikan lewat internet.
+        <h4>3. Dari Internet (URL / Online Resource)</h4>
+        Menggunakan alamat gambar langsung dari sebuah website.
+        <p><img src="assets/imginter.png" alt="" width="500px" height="100px"></p>
+    </section>
+<h1>Membuat Daftar (List) pada HTML</h1>
+<section>
+    Dalam HTML, list digunakan untuk menampilkan informasi dalam bentuk daftar. Ada tiga jenis utama:
+    <h4>1.Unordered List</h4>
+    <ul>
+        <li>Daftar tanpa urutan, biasanya pakai simbol bullet (•).</li>
+        <li>square untuk simbol persegi</li>
+        <li>disc (default) untuk simbol lingkaran disc</li>
+        <li>none tidak memakai simbol</li>
+        <li>circle untuk simbol lingkaran</li>
+        <li>Contoh:</li>
+    </ul>
+    <p><img src="assets/listul.png" alt="" width="250px" height="200px"></p>
+    <h4>2.Ordered List</h4>
+    <ul>
+        <li>Daftar berurutan, ditandai dengan angka atau huruf.</li>
+        <li>a untuk alfabet a, b, c, dan seterusnya</li>
+        <li>A untuk alfabet A, B, C, dan seterusnya</li>
+        <li>i untuk angka romawi i, ii, iii, dan seterusnya</li>
+        <li>I untuk angka romawi I, II, III, dan seterusnya.</li>
+        <li>Contoh:</li>
+    </ul>
+    <p><img src="assets/listol.png" alt="" width="300px" height="200px"></p>
+    <h4>3.Description List</h4>
+    <ul>
+        <li>Daftar berisi istilah dan penjelasannya.</li>
+        Ada tiga tag yang digunakan untuk membuat description list:
+        <li>(description list) tag untuk memulai description list</li>
+        <li>(description term) tag untuk membuat kata yang akan dideskripsikan</li>
+        <li>(description description) tag untuk membuat penjelasan dari kata</li>
+    </ul>
+    <p><img src="assets/listdl.png" alt="" width="500px"></p>
+    Seperti ini tampilan 3 list yang sudah dibuat
+    <p><img src="assets/tamplitanlist.png" alt="" width="500px"></p>
+</section>
+<footer style="text-align:center; margin-top:30px; font-size:0.9em; color:gray;">
+    &copy; 2025 Rasyidah Nuraini - A11.2024.15721
+  </footer>
+</body>
+</html>
